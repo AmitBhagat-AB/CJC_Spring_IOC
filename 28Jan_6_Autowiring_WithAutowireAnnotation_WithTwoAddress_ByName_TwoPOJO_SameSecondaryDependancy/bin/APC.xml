@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+        
+        <context:annotation-config/>
+        
+<bean id="address" class="annotation1.Address">
+<property name="areaname" value="Delhapur"></property>
+<property name="cityname" value="Jounpur"></property>
+</bean>
+        
+<bean id="s" class="annotation1.Student">
+<property name="rollno" value="786"></property>
+<property name="name" value="Narendra Athawale"></property>
+</bean>  
+</beans>  
+        
+        
+       
