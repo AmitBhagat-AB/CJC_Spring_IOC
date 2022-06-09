@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="addr" class="com.cjc.Address">
+<property name="areaName" value="Kothrud"></property>
+<property name="cityName" value="Pune"></property>
+ </bean>
+ 
+ <bean id="eaddr" class="com.cjc.Address" >
+<property name="areaName" value="KN"></property>
+<property name="cityName" value="Pune"></property>
+ </bean>
+ 
+ <bean id="s" class="com.cjc.Student" autowire="byName">
+<property name="rollno" value="786"></property>
+<property name="name" value="Jon China"></property>
+  </bean>  
+  
+ <bean id="e" class="com.cjc.Employee" autowire="byName">
+<property name="eid" value="007"></property>
+<property name="ename" value="Parshu Bond "></property>
+ </bean> 
+ </beans>
+
+
+ 
+ 
+ 
+
+
+ 
