@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+
+<bean id="s" class="annotation2.Student">
+<property name="rollno" value="786"></property>
+
+<property name="name" value="Ramvilas Yadav"></property>
+<property name="addr" >
+<bean class="annotation2.Address">
+<property name="areaName" value="Tekanaka"></property>
+<property name="cityName" value="Mirzapur"></property>
+</bean>
+</property>
+  </bean>
+<bean id="e" class="annotation2.Employee">
+<property name="eid" value="420"></property>
+<property name="ename" value="Ramdas Modi"></property>
+<property name="addr">
+<bean class="annotation2.Address">
+<property name="areaName" value="Golchowk"></property>
+<property name="cityName" value="Jounpur"></property>
+</bean>
+</property>
+</bean>
+</beans>  
+        
+        
+       
